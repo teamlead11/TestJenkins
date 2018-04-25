@@ -1,0 +1,323 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User navigate to demoqa",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12662158665,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User register in demoqa page",
+            "match": {
+              "location": "DemoqaStep.user_register_in_demoqa_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 18024421020,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.launch()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "About textbox verification",
+        "description": "",
+        "id": "demoqa-registrations;about-textbox-verification;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2315602244,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.quitB()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: call function result missing \u0027value\u0027\n  (Session info: chrome\u003d65.0.3325.181)\n  (Driver info: chromedriver\u003d2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform\u003dWindows NT 6.2.9200 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.7.0\u0027, revision: \u00272321c73\u0027, time: \u00272017-11-02T22:22:35.584Z\u0027\nSystem info: host: \u0027HP\u0027, ip: \u0027192.168.1.28\u0027, os.name: \u0027Windows 8\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.2\u0027, java.version: \u00271.8.0_20\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\\Users\\raju\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}\nSession ID: e7f56ff8168872378cfc2b98c018d728\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy16.sendKeys(Unknown Source)\r\n\tat baseclass.BaseClass.sendText(BaseClass.java:42)\r\n\tat stepdefinition.DemoqaStep.user_enter_text_and(DemoqaStep.java:37)\r\n\tat ✽.User enter text \"Prem\" and \"sri\"(Feature/Demoqa.feature:8)\r\n",
+              "duration": 965079686,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User enter text \"Prem\" and \"sri\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Prem",
+                  "offset": 17
+                },
+                {
+                  "val": "sri",
+                  "offset": 28
+                }
+              ],
+              "location": "DemoqaStep.user_enter_text_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User enter another text \"9987042504\" and \"premsri\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9987042504",
+                  "offset": 25
+                },
+                {
+                  "val": "premsri",
+                  "offset": 42
+                }
+              ],
+              "location": "DemoqaStep.user_enter_another_text_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User enter about \"im good boy\" and \"premsri2504@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "im good boy",
+                  "offset": 18
+                },
+                {
+                  "val": "premsri2504@gmail.com",
+                  "offset": 36
+                }
+              ],
+              "location": "DemoqaStep.user_enter_about_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User enter pass \"prem\" and \"prem\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "prem",
+                  "offset": 17
+                },
+                {
+                  "val": "prem",
+                  "offset": 28
+                }
+              ],
+              "location": "DemoqaStep.user_enter_pass_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User verifies text \"Prem\" and \"sri\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Prem",
+                  "offset": 20
+                },
+                {
+                  "val": "sri",
+                  "offset": 31
+                }
+              ],
+              "location": "DemoqaStep.user_verifies_text_and(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User verifies another text \"9987042504\" and \"premsri\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9987042504",
+                  "offset": 28
+                },
+                {
+                  "val": "premsri",
+                  "offset": 45
+                }
+              ],
+              "location": "DemoqaStep.user_verifies_another_text_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User verifies about \"im good boy\" and \"premsri2504@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "im good boy",
+                  "offset": 21
+                },
+                {
+                  "val": "premsri2504@gmail.com",
+                  "offset": 39
+                }
+              ],
+              "location": "DemoqaStep.user_verifies_about_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User verifies pass \"prem\" and \"prem\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "prem",
+                  "offset": 20
+                },
+                {
+                  "val": "prem",
+                  "offset": 31
+                }
+              ],
+              "location": "DemoqaStep.user_verifies_pass_and(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@textbox"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User navigate to demoqa",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9935681662,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User register in demoqa page",
+            "match": {
+              "location": "DemoqaStep.user_register_in_demoqa_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9579869605,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.launch()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "About radio and checkbox verification",
+        "description": "",
+        "id": "demoqa-registrations;about-radio-and-checkbox-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 1235476173,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.quitB()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2715001562,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User radio and checkbox click",
+            "match": {
+              "location": "DemoqaStep.user_radio_and_checkbox_click()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 513623436,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User verifies radio and checkbox selected",
+            "match": {
+              "location": "DemoqaStep.user_verifies_radio_and_checkbox_selected()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@radio"
+          }
+        ]
+      }
+    ],
+    "name": "Demoqa registrations",
+    "description": "",
+    "id": "demoqa-registrations",
+    "keyword": "Feature",
+    "uri": "Feature/Demoqa.feature",
+    "tags": []
+  }
+]
