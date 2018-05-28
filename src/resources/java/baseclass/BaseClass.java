@@ -20,12 +20,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BaseClass {
 
 	public static WebDriver driver;
+	
 	public WebDriver launchBrowser(String name) {
-		System.setProperty("webdriver.chrome.driver",
-				"src/resources/java/lib/chromedriver.exe");
+	public static final String URL = "localhost:8080/wd/hub";
+	DesiredCapabilities caps = new DesiredCapabilities();
+	caps.setCapability("browserName", "IE");
+	caps.setCapability("version", "11");
+	caps.setCapability("platform", "WIN10");
+	caps.setCapability("name", "My First Test");
 
-		driver = new ChromeDriver();
-		driver.get(name);
+	WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
+	driver.get("http://www.google.com/ncr");
 		return driver;
 	}
 	
