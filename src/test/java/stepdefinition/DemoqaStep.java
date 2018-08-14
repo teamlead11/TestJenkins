@@ -36,6 +36,7 @@ public class DemoqaStep extends BaseClass {
 		getInstance();
 		sendText(d.getfName(), fname);
 		sendText(d.getlName(), lname);
+		sendText(d.getlName(), lname);
 
 	}
 
